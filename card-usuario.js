@@ -11,17 +11,19 @@ class CardUsuario extends HTMLElement{
             .card {
                 border-radius: 25px;
                 padding: 10px;
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+                width: 350px;
+                height: auto;
+                box-shadow: 2px 5px 10px 10px rgba(0, 0, 0, 0.2);
                 background: green;
-                color: red;
+                color: orange;
             }
             .titulo {
                 font-weight: bold;
-                font-size: 10px;
+                font-size: 20px;
             }
             .nombre{
                 color:blue;
-                font-size: 4px;
+                font-size: 10px;
             }
         </style>
 
