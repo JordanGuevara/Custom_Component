@@ -1,5 +1,5 @@
 class CardUsuario extends HTMLElement{
-    static get attributeObservar(){
+    static get observedAttributes(){
         return ['tema'];
     }
 
@@ -17,7 +17,7 @@ class CardUsuario extends HTMLElement{
             }
             .titulo {
                 font-weight: bold;
-                font-size: 10 px;
+                font-size: 10px;
             }
             .nombre{
                 color:blue;
@@ -27,12 +27,12 @@ class CardUsuario extends HTMLElement{
 
         <div class="card">
             <div class="titulo"><slot name="titulo">Sin título</slot></div>
-            <div class="nombre"><slot name="nombre">Sin nombre</div>
+            <div class="nombre"><slot name="nombre">Sin nombre</slot></div>
             <div class="texto"><slot name="texto">Sin contenido</slot></div>
         </div>
     `;
     }
-    attributeCallBack(name,valor1,valor2){
+    attributeChangedCallback(name,valor1,valor2){
         if(name=='tema' && valor1!=valor2){
             this.shadowRoot.querySelector('.card').style.background = valor1;
         }
