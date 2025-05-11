@@ -1,8 +1,4 @@
 class CardUsuario extends HTMLElement{
-    static get observedAttributes(){
-        return ['tema'];
-    }
-
     constructor(){
         super();
         this.attachShadow({mode: 'open'});
@@ -25,6 +21,9 @@ class CardUsuario extends HTMLElement{
                 color:blue;
                 font-size: 10px;
             }
+            .texto{
+                color: red;
+            }
         </style>
 
         <div class="card">
@@ -33,6 +32,9 @@ class CardUsuario extends HTMLElement{
             <div class="texto"><slot name="texto">Sin contenido</slot></div>
         </div>
     `;
+    }
+    static get observedAttributes(){
+        return ['tema'];
     }
     attributeChangedCallback(name,valor1,valor2){
         if(name=='tema' && valor1!=valor2){
