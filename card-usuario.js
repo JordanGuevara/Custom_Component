@@ -33,7 +33,7 @@ class CardUsuario extends HTMLElement{
     `;
     }
     attributeCallBack(name,valor1,valor2){
-        if(name=='tema' && valor1 !=valor2){
+        if(name=='tema' && valor1!=valor2){
             this.shadowRoot.querySelector('.card').style.background = valor1;
         }
 
