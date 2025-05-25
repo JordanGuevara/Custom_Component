@@ -1,10 +1,22 @@
-body{
-    background-color: bisque;
-    padding: 20px;
+:root {
+    --fondo-body: bisque;
+    --padding-general: 10px;
+    --direccion-flex: row;
+    --color-boton: #006937;
+    --color-text:aliceblue;
+}
+
+body {
+    background-color: var(--fondo-body);
+    padding: var(--padding-general);
     display: flex;
-    flex-direction: row;
-    padding: 10px;
+    flex-direction: var(--direccion-flex);
     justify-content: center;
     align-content: center;
-    
+}
+
+button {
+    border-radius: 10px 10px 10px 10px;
+    background-color: var(--color-boton);
+    color:var(--color-text);
 }
