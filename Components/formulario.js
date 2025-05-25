@@ -5,7 +5,7 @@ class formularioAccion extends HTMLElement{
         this.shadowRoot.innerHTML = `
             <style>
                 form {
-                    border: 2px solid blue;
+                    border: 2px solid black;
                     padding: 15px;
                     border-radius: 8px;
                     width: 500px;
