@@ -9,14 +9,15 @@
 </head>
 <body>
     <espe-modal id="miModal">
-        <div slot="contenido">
-            <h2>Universidad de la Fuerzas Armadas ESPE</h2>
-            <p>Contenido puesto desde un modal</p>
-        </div>
+        <card-user slot="contenido" tema="tema">
+            <span slot="titulo">Mi tercer componente</span>
+            <span slot="nombre">Jordan Guevara</span>
+            <span slot="texto">Ingeniería de Software</span>
+        </card-user>
     </espe-modal>
 
-    <button onclick="document.getElementById('miModal').abrir()">Mostrar Modal</button>
 
+    <button onclick="document.getElementById('miModal').abrir()">Mostrar Modal</button>
     <br>
     <formulario-accion>
         <button slot="Enviar">Cambiar nombre</button>

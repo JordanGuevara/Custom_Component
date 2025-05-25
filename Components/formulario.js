@@ -30,6 +30,7 @@ class formularioAccion extends HTMLElement{
             </style>
 
             <form>
+                <h3>Mi segundo componente</h3>
                 <label for="nombreNuevo">Nuevo nombre:</label>
                 <input type="text" id="nombreNuevo" name="nombreNuevo">
                 <slot name="Enviar"></slot>
