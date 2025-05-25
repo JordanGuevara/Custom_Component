@@ -8,6 +8,16 @@
     
 </head>
 <body>
+    <espe-modal id="miModal">
+        <div slot="contenido">
+            <h2>Universidad de la Fuerzas Armadas ESPE</h2>
+            <p>Contenido puesto desde un modal</p>
+        </div>
+    </espe-modal>
+
+    <button onclick="document.getElementById('miModal').abrir()">Mostrar Modal</button>
+
+    <br>
     <formulario-accion>
         <button slot="Enviar">Cambiar nombre</button>
         <button slot="Enviar-Parrafo">Cambiar parrafo</button>
