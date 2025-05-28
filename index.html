@@ -3,22 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Tarea de Web Components</title>
     <link rel="stylesheet" href="./css/style.css">
     
 </head>
 <body>
-    <card-user tema="tema">
-        <h1 slot="titulo">Mi primer componente</h1>
-        <h2 slot="nombre">Jordan Guevara</h2>
-        <p slot="texto">Realizando el primer componente en html con javascript.</p>
-    </card-user>
-    <div class="tarjeta">
-        <h1>Mi primer componente</h1>
-        <h2>Jordan Guevara</h2>
-        <p>Realizando el primer componente en html con javascript.</p>
-    </div>
-    <script src="./card-usuario.js" defer></script> 
+    <!-- Primer Componente -->
+    <formulario-accion>
+        <button slot="Enviar">Cambiar nombre</button>
+        <button slot="Enviar-Parrafo">Cambiar parrafo</button>
+    </formulario-accion>
+    <!-- Tercer Componente -->
+    <espe-modal id="miModal">
+        <!-- Segundo Componente -->
+        <card-user slot="contenido" tema="tema">
+            <span slot="titulo">Mi tercer componente</span>
+            <span slot="nombre">Jordan Guevara</span>
+            <span slot="texto">Ingeniería de Software</span>
+        </card-user>
+    </espe-modal>
+    <button onclick="document.getElementById('miModal').abrir()">Mostrar Modal</button>
+    <br>
     
+    <script type="module" src="./app.js"></script>
 </body>
 </html>
